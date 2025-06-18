@@ -23,6 +23,10 @@ export const routes: Routes = [
     loadComponent: () => import('./zoneless/zoneless.component').then((m) => m.ZonelessComponent),
   },
   {
+    path: 'vitest',
+    loadComponent: () => import('./vitest/vitest').then((m) => m.VitestComponent),
+  },
+  {
     path: '**',
     redirectTo: '/stable-apis',
   },
